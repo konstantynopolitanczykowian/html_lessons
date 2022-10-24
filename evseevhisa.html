@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><b>Отпрвка заявки на конференции</b></title>
+</head>
+<body>
+	<p><b>Основные данные</b></p>
+	<p><b>*Фамилия, имя, отчество:</b></p>  
+	<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+	<p><b>Дата рождения:</b></p>
+	<p><textarea placeholder="дд.мм.гггг"></textarea></p>
+	<p><b>Пол:</b></p>
+	<input type="radio" name="answer" value="a1">Ламинат 
+	<input type="radio" name="answer" value="a2">Паркет
+	<p><b>Данные для создания личного кабинета</b></p>
+		<p><b>*Адрес электронной почты:</b></p>  
+		<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+		<p><b>*Пароль для создания личного кабинета:</b></p>  
+		<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+		<p><b>*Подтверждение пароля:</b></p>  
+		<p><textarea rows="1" cols="50" name="text" required></textarea></p>
+	<p><b>Материалы для конференции</b></p>
+		<p><b>*Тема доклада:</b></p>  
+		<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+		<p><b>*Тезисы доклада(не более 1000 символов):</b></p>  
+		<p><textarea requiredmaxlength="1000" rows="10" cols="50" name="text"></textarea></p>
+	<p><b>Файл презентации:</b></p>
+		<p><input type="file" name="answer" value="a1"><Br></p>
+	<p><b>Дополнительные опции:</b></p>
+	<input type="checkbox" name="answer" value="a1">Проживание в отеле<Br>
+  		<input type="checkbox" name="answer" value="a2">Завтрак<Br>
+  		<input type="checkbox" name="answer" value="a3">Обед<Br>
+  		<input type="checkbox" name="answer" value="a4">Ужин<Br>
+	<hr>
+	<p><input type="submit" value="Отправить" /></p>
+	<hr>
+<p>*Поля, отмеченные звёздочкой, являются обязательными для заполнения</p>
+</body>
+</html>
