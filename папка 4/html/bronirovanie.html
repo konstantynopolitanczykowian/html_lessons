@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Гостинница "Mon  cher"</title>
+</head>
+<body>
+	<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее
+контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table
+border="0"
+align="center"
+rules="rows"
+style="width:60%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="1" - двойная рамка толщиной в 1px
+background="images/168.png" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table
+border="0"
+background="images/168.png"
+bgcolor="#481173"
+cellpadding="0"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём столбец таблицы-->
+<th>
+<!--Содержание ячейки столбца-->
+<h1><img src="C:\Users\User\Desktop\папка 3\html\pictures\1.png"></h1>
+<h3></h3>
+<!--Закрываем таблицу-->
+</th>
+<th><font color='#EAAA05'><h2>Для связи с нами:</h2></font>
+<p><font color='#EAAA05'><h3>+7 (8422) 35-21-84</h3></font></p>
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+
+<table
+border="0"
+bgcolor="#e6e6fa"
+cellpadding="10"
+style="width:100%; border-radius:0px;">
+<!--Создаём строку-->
+<tr>
+	<th><img src="C:\Users\User\Desktop\папка 3\html\pictures\2.png"></th>
+	<th><h2><em><font color='#CD9C4C'>Адрес</em>: г. N, пр. Зубкова, д. 6</h2></font></th>
+	<th>       </th>
+	<th>
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\21.png">
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\22.png">
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\23.png">
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\24.png">
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\25.png">
+		<img src="C:\Users\User\Desktop\папка 3\html\pictures\26.png">
+	</th>
+	</tr>
+
+	</table>
+
+	<table
+	border="0"
+	bgcolor="#e6e6fa"
+	cellpadding="10"
+	style="width:100%; border-radius:0px;">
+<!--Создаём строку-->
+	<tr>
+		<th><font color='#CD9C4C'><h3>Главная</h3></font></th>
+		<th><font color='#CD9C4C'><h3>Номера и цены</h3></font></th>
+		<th><font color='#CD9C4C'><h3>Дополнительные услуги</h3></font></th>
+		<th><font color='#CD9C4C'><h3>Бронирование номера</h3></font></th>
+		<th><font color='#CD9C4C'><h3>О нас</h3></font></th>
+	
+	</tr>
+</table>
+<table
+	border="0"
+	bgcolor="#e6e6fa"
+	cellpadding="10"
+	style="width:100%; border-radius:0px;">
+	<tr>
+	<th>
+	<div align="left"><p><b>*Фамилия, имя, отчество:</b></p>  
+	<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+	<p><b>*Контактный телефон</b></p>  
+	<p><textarea  rows="1" cols="50" name="text" required></textarea></p>
+	<p><b>Выбранная категория номера:</b></p>
+	<input type="radio" name="answer" value="a1">Стандарт
+	<input type="radio" name="answer" value="a2">Люкс
+	<input type="radio" name="answer" value="a3">Люкс(Экстра)
+	<p><b>Дополнительные опции:</b></p>
+	<input type="checkbox" name="answer" value="a1">Трансфер от вокзала  и аэропорта <Br>
+  		<input type="checkbox" name="answer" value="a2">Визовая поддержка <Br>
+  		<input type="checkbox" name="answer" value="a3">Банкетный зал <Br>
+  		<input type="checkbox" name="answer" value="a4">Горячие питание <Br>
+  		<input type="checkbox" name="answer" value="a4">Бильярд <Br>
+  		<input type="checkbox" name="answer" value="a4">Сауна <Br>
+	<hr>
+	<p><input type="submit" value="Бронировать" /></p>
+	<hr>
+<p>*Поля, отмеченные звёздочкой, являются обязательными для заполнения</p></div>
+<th>
+</tr>
+<!--Создаём ячейку
+Оформление:
+rowspan="2" - объединяем две ячейки в одну.
+Число объединяемых ячеек по числу ячеек в сайдбаре.
+style="width:80%" - основной контент занимает 80% всей площади,
+оставшиеся 20% для сайдбара-->
+</table>
+
+<!--ПОДВАЛ-->
+
+<!--Создаём таблицу подвала-->
+<table
+border="0"
+bgcolor="#481173"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<div align="left">
+<p><font color='#EAAA05'><h2>О нас</h2></p>
+	<p><font color='#EAAA05'><h3>Адрес: г. N, пр. Зубкова, д. 6</h3></p>
+	<p><font color='#EAAA05'><h3>Номер для связи:
+<p>+7(800)545-35-35</p></h3></p></div>
+</th>
+<th><font color='#EAAA05'><p><h2>Наши контакты:</h2></p></font>
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\31.png">
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\32.png">
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\33.png">
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\34.png">
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\35.png">
+	<img src="C:\Users\User\Desktop\папка 3\html\pictures\36.png">
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+
+</body>
+</html>
